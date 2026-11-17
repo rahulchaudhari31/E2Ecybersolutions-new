@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "../components/Container.jsx";
+import Seo from "../components/Seo.jsx";
 import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Reveal from "../components/Reveal.jsx";
@@ -47,6 +48,7 @@ export default function CaseStudy() {
 
   return (
     <>
+      <Seo page={caseStudyPage} />
       <PageHeader page={caseStudyPage}>
         <div className="flex flex-wrap gap-2">
           <span className="inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/[0.06] px-3.5 py-2 text-[10px] font-medium uppercase tracking-[0.18em] text-amber-200/80">

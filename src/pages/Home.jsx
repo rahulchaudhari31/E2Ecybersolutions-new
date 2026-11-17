@@ -1,4 +1,6 @@
 import Hero from "../components/home/Hero.jsx";
+import Seo from "../components/Seo.jsx";
+import { homePage } from "../data/siteContent.js";
 import ClientLogoMarquee from "../components/home/ClientLogoMarquee.jsx";
 import AboutTeaser from "../components/home/AboutTeaser.jsx";
 import ServicesGrid from "../components/home/ServicesGrid.jsx";
@@ -11,6 +13,7 @@ import CtaBand from "../components/home/CtaBand.jsx";
 export default function Home() {
   return (
     <>
+      <Seo page={homePage} />
       <Hero />
       <ClientLogoMarquee />
       <AboutTeaser />

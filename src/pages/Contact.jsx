@@ -1,4 +1,5 @@
 import Container from "../components/Container.jsx";
+import Seo from "../components/Seo.jsx";
 import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Icon from "../components/Icons.jsx";
@@ -15,6 +16,7 @@ export default function Contact() {
 
   return (
     <>
+      <Seo page={contactPage} />
       <PageHeader page={contactPage}>
         <div className="flex flex-wrap gap-2">
           <a

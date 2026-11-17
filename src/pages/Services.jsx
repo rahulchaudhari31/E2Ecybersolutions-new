@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "../components/Container.jsx";
+import Seo from "../components/Seo.jsx";
 import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Card from "../components/Card.jsx";
@@ -54,6 +55,7 @@ const serviceFaqs = [
 export default function Services() {
   return (
     <>
+      <Seo page={heroPage} />
       <PageHeader page={heroPage}>
         <div className="flex flex-wrap gap-2">
           {serviceCategories.map((category, index) => (

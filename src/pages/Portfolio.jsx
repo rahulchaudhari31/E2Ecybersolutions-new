@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Container from "../components/Container.jsx";
+import Seo from "../components/Seo.jsx";
 import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Reveal from "../components/Reveal.jsx";
@@ -34,6 +35,7 @@ export default function Portfolio() {
 
   return (
     <>
+      <Seo page={workPage} />
       <PageHeader page={workPage}>
         <div className="flex flex-wrap gap-2">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-body-xs text-white/55">

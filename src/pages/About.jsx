@@ -1,4 +1,5 @@
 import Container from "../components/Container.jsx";
+import Seo from "../components/Seo.jsx";
 import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Card from "../components/Card.jsx";
@@ -17,6 +18,7 @@ const valueIcons = ["sparkles", "layers", "zap", "target"];
 export default function About() {
   return (
     <>
+      <Seo page={aboutPage} />
       <PageHeader page={aboutPage} />
 
       <AboutTimeline />
